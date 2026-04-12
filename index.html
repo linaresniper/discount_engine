@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form>
+        <h1>Discounts</h1>
+        <label for="purchaseAmount">Enter your purchase's cost:</label>
+        <input id="purchaseAmount" type="number" placeholder="$">
+
+        <label for="hasCoupon">do you have a coupon?</label>
+        <select name="hasCoupon" id="hasCoupon">
+            <option value="true">yes</option>
+            <option value="false">no</option>
+        </select>
+
+        <button type="button" onclick="totalPrice()">Calculate</button>
+
+        <p id="totalPrice"></p>
+    </form>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
