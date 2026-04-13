@@ -5,17 +5,17 @@ function totalPrice() {
     if (hasCoupon == true) {
         let total = purchaseAmount - (purchaseAmount * 0.30);
         document.getElementById("totalPrice").textContent =
-        "premium discount applied (30%). total price: $" + final;
+        "premium discount applied (30%). total price: $" + total;
 
     } else if (purchaseAmount > 100) {
         let total = purchaseAmount - (purchaseAmount * 0.20);
         document.getElementById("totalPrice").textContent =
-        "your discount is 20%. total price: $" + final;
+        "your discount is 20%. total price: $" + total;
 
     } else if (purchaseAmount > 50) {
         let total = purchaseAmount - (purchaseAmount * 0.10);
         document.getElementById("totalPrice").textContent =
-        "your discount is 10%. total price: $" + final;
+        "your discount is 10%. total price: $" + total;
 
     } else {
         document.getElementById("totalPrice").textContent =
